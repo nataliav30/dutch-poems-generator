@@ -17,7 +17,9 @@ let prompt =`User instructions are: Generate a Dutch poem about ${instructionsIn
 
 let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-
+let poemElement = document.querySelector("#poem");
+poemElement.classList.remove("hidden");
+poemElement.innerHTML=`⏳ Generating a Dutch poem about ${instructionsInput.value}`;
 
 axios.get(apiURL).then(displayPoem);
 }

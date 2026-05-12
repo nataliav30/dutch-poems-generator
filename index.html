@@ -14,8 +14,9 @@
     <h1>Welkom bij de Dutch Poems Generator✍🏼</h1>
 </header>
 <main>
+    <div class="form-container">
     <form id="poem-generator-form">
-<input type="text" placeholder=" Enter the topic of the Dutch poem" 
+<input type="text" placeholder=" Enter the topic of a Dutch poem" 
 autofocus
 required
 autocomplete="off"
@@ -25,7 +26,10 @@ id="user-instructions";
 <input type ="submit" class="submit-button"/>
 
     </form>
-    <div class="poem" id="poem"> </div>
+    <div class="hint"> i.e : Amsterdam, birds or canals</div>
+    </div>
+    
+    <div class="poem hidden" id="poem"> </div>
     
 </main>
 <footer>This project was coded by <a href = "https://github.com/nataliav30" target= "_blank">Natalia Vasquez</a> and is <a href ="https://github.com/nataliav30/dutch-poems-generator" target="_blank" >open sourced on Github </a> 
